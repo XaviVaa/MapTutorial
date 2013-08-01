@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate>
+{
+    
+}
+// Creamos el Outled de tipo MKMapView para controlar el objeto del mapa
+@property(nonatomic, retain) IBOutlet MKMapView *mapView;
 
 @end
